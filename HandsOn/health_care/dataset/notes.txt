@@ -1,0 +1,143 @@
+1.PROBLEM UNDERSTANDING
+
+
+Goal : readmit (yes/no)
+
+=================================================================================================
+
+2.Data Cleaning
+
+
+
+Input Features : (['patient_id  ', ' age', ' gender', ' race ',
+       ' marital_status', ' insurance_type', ' admission_type',
+       ' admission_source  ', ' length_of_stay', ' department      ',
+       ' room_type   ', ' num_procedures', ' num_medications', ' has_diabetes',
+       ' has_hypertension', ' has_heart_disease', ' has_copd',
+       ' has_kidney_disease', ' previous_admissions', ' discharge_systolic_bp',
+       ' discharge_diastolic_bp', ' discharge_heart_rate',
+       ' discharge_temperature', ' discharge_o2_saturation',
+       ' hemoglobin_level', ' wbc_count', ' creatinine_level',
+       ' glucose_level', ' discharge_disposition   ', ' follow_up_scheduled',
+       ' medication_adherence_score', ' discharge_date'],
+      dtype='str')
+
+
+
+Output feature : ' readmitted_30days'
+
+total fetaures count  = 33
+input 32 
+output 1
+
+
+
+null cols : 0
+duplicate cols : 0
+
+done:
+    type casting
+    handle outliers
+============================================================================================
+
+3. Exploratory
+
+=== Numeric Columns ===
+[' age', 
+' length_of_stay',
+ ' num_procedures', 
+ ' num_medications',
+  ' previous_admissions',
+   ' discharge_systolic_bp',
+    ' discharge_diastolic_bp', 
+    ' discharge_heart_rate',
+     ' discharge_temperature', 
+     ' creatinine_level',
+      ' glucose_level']
+
+=== Categorical Columns ===
+['patient_id  ', 
+' gender', 
+' race',
+ ' marital_status',
+  ' insurance_type',
+   ' admission_type',
+    ' admission_source  ',
+     ' department      ',
+      ' room_type   ',
+       ' has_diabetes',
+        ' has_hypertension',
+         ' has_heart_disease',
+          ' has_copd',
+           ' has_kidney_disease',
+            ' discharge_o2_saturation',
+             ' hemoglobin_level', ' wbc_count',
+              ' discharge_disposition   ', 
+              ' follow_up_scheduled',
+               ' medication_adherence_score',
+                ' discharge_date', ' readmitted_30days']
+
+
+
+Check for Abnormal
+
+
+=== Numeric Columns ===
+[' age', - no Abnormal
+' length_of_stay', 
+ ' num_procedures', 
+ ' num_medications',
+  ' previous_admissions',
+   ' discharge_systolic_bp',
+    ' discharge_diastolic_bp', 
+    ' discharge_heart_rate',
+     ' discharge_temperature', 
+     ' creatinine_level',
+      ' glucose_level']
+
+
+
+
+
+OUTLIER PROBLEM
+
+🚨 Why you got many outliers (623)
+
+👉 Your data is likely:
+
+Right-skewed (long tail)
+
+Meaning:
+
+Most patients stay short
+Few stay very long
+
+👉 IQR struggles with skewed data
+
+✅ What should YOU do?
+✔ Option 1 (Best for ML) → KEEP them
+Do nothing ✔
+✔ Option 2 → Capping (recommended)
+Q1 = df['length_of_stay'].quantile(0.25)
+Q3 = df['length_of_stay'].quantile(0.75)
+IQR = Q3 - Q1
+
+upper = Q3 + 1.5 * IQR
+
+df['length_of_stay'] = df['length_of_stay'].clip(upper=upper)
+
+👉 Keeps data but limits extreme effect
+
+✔ Option 3 → Log transformation (VERY powerful)
+import numpy as np
+df['length_of_stay_log'] = np.log1p(df['length_of_stay'])
+
+👉 Fixes skewness instead of deleting data
+
+❌ Option to AVOID (in your case)
+Removing all 623 rows ❌
+
+👉 Why bad?
+
+You lose critical patient cases
+Model becomes biased toward “normal” patients
