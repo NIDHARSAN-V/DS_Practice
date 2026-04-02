@@ -79,6 +79,23 @@ done:
 
 
 
+Removed unwanted cols
+(categorical)
+patient_id
+gender
+race
+marital_status
+discharge_date
+
+
+
+
+
+
+
+
+
+
 Check for Abnormal
 
 
@@ -101,43 +118,29 @@ Check for Abnormal
 
 OUTLIER PROBLEM
 
-🚨 Why you got many outliers (623)
 
-👉 Your data is likely:
+i have 3 ways to solve it 
+            leave it ****
+            capping
+            log transformation
 
-Right-skewed (long tail)
 
-Meaning:
 
-Most patients stay short
-Few stay very long
 
-👉 IQR struggles with skewed data
+age - no outlier -- no proof
+length_of_stay - outlier present -- 
+            simple mean with target
+            hypothesis testing
 
-✅ What should YOU do?
-✔ Option 1 (Best for ML) → KEEP them
-Do nothing ✔
-✔ Option 2 → Capping (recommended)
-Q1 = df['length_of_stay'].quantile(0.25)
-Q3 = df['length_of_stay'].quantile(0.75)
-IQR = Q3 - Q1
 
-upper = Q3 + 1.5 * IQR
 
-df['length_of_stay'] = df['length_of_stay'].clip(upper=upper)
 
-👉 Keeps data but limits extreme effect
 
-✔ Option 3 → Log transformation (VERY powerful)
-import numpy as np
-df['length_of_stay_log'] = np.log1p(df['length_of_stay'])
 
-👉 Fixes skewness instead of deleting data
 
-❌ Option to AVOID (in your case)
-Removing all 623 rows ❌
 
-👉 Why bad?
 
-You lose critical patient cases
-Model becomes biased toward “normal” patients
+
+
+
+

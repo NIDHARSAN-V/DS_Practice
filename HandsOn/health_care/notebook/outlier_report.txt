@@ -1,0 +1,120 @@
+
+Column: age
+IQR: 25.0
+Lower Bound: 7.5
+Min: 18
+Upper Bound: 107.5
+Max: 95
+Outliers count: 0
+
+Column: length_of_stay
+IQR: 5.0
+Lower Bound: -6.5
+Min: 1
+Upper Bound: 13.5
+Max: 30
+Outliers count: 596
+
+Column: num_procedures
+IQR: 2.0
+Lower Bound: -2.0
+Min: 0
+Upper Bound: 6.0
+Max: 11
+Outliers count: 208
+
+Column: num_medications
+IQR: 4.0
+Lower Bound: 0.0
+Min: 1
+Upper Bound: 16.0
+Max: 26
+Outliers count: 49
+
+Column: previous_admissions
+IQR: 1.0
+Lower Bound: -0.5
+Min: 0
+Upper Bound: 3.5
+Max: 9
+Outliers count: 930
+
+Column: discharge_systolic_bp
+IQR: 24.0
+Lower Bound: 77.0
+Min: 90
+Upper Bound: 173.0
+Max: 192
+Outliers count: 43
+
+Column: discharge_diastolic_bp
+IQR: 17.0
+Lower Bound: 43.5
+Min: 50
+Upper Bound: 111.5
+Max: 120
+Outliers count: 30
+
+Column: discharge_heart_rate
+IQR: 17.0
+Lower Bound: 43.5
+Min: 50
+Upper Bound: 111.5
+Max: 121
+Outliers count: 36
+
+Column: discharge_temperature
+IQR: 1.0
+Lower Bound: 96.4
+Min: 95.1
+Upper Bound: 100.4
+Max: 101.8
+Outliers count: 147
+
+Column: discharge_o2_saturation
+IQR: 5.0
+Lower Bound: 85.5
+Min: 85.0
+Upper Bound: 105.5
+Max: 100.0
+Outliers count: 7
+
+Column: hemoglobin_level
+IQR: 2.8000000000000007
+Lower Bound: 6.899999999999999
+Min: 4.8
+Upper Bound: 18.1
+Max: 19.4
+Outliers count: 64
+
+Column: wbc_count
+IQR: 4.0
+Lower Bound: -0.09999999999999964
+Min: 0.1
+Upper Bound: 15.9
+Max: 19.7
+Outliers count: 60
+
+Column: creatinine_level
+IQR: 1.31
+Lower Bound: -1.6150000000000002
+Min: 0.01
+Upper Bound: 3.625
+Max: 10.84
+Outliers count: 697
+
+Column: glucose_level
+IQR: 55.0
+Lower Bound: 9.5
+Min: 2.0
+Upper Bound: 229.5
+Max: 281.0
+Outliers count: 64
+
+Column: medication_adherence_score
+IQR: 2.0
+Lower Bound: 3.0
+Min: 1.0
+Upper Bound: 11.0
+Max: 10.0
+Outliers count: 183

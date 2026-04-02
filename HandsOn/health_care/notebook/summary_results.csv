@@ -1,0 +1,16 @@
+feature,p_normal_vs_upper,p_normal_vs_lower,p_lower_vs_upper,mean_lower,mean_upper,mean_normal
+previous_admissions,1.2429289505125638e-48,,,No data,0.459,0.243
+length_of_stay,7.077374348398964e-08,,,No data,0.349,0.253
+num_procedures,0.006350405895010957,,,No data,0.332,0.256
+num_medications,0.0739698214639909,,,No data,0.347,0.256
+discharge_diastolic_bp,0.08395863299033607,,,No data,0.367,0.257
+glucose_level,0.13624855614942394,0.7662823579798712,0.9191462672302861,0.32,0.333,0.256
+wbc_count,0.31862689935435745,,,No data,0.283,0.257
+hemoglobin_level,0.45565380564432,0.7077733742658132,0.7624313806008608,0.3,0.265,0.256
+discharge_heart_rate,0.5372206755770372,,,No data,0.25,0.257
+creatinine_level,0.7610885316795195,,,No data,0.245,0.257
+discharge_systolic_bp,0.7623609872941901,,,No data,0.209,0.257
+discharge_temperature,0.8104755925969178,0.5488623936261917,0.4635608459196914,0.263,0.211,0.257
+age,,,,No data,No data,0.257
+discharge_o2_saturation,,0.574633928870645,,0.286,No data,0.255
+medication_adherence_score,,0.9968536783657183,,0.344,No data,0.255
