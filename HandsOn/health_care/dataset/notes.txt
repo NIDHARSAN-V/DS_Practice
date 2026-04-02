@@ -90,6 +90,17 @@ discharge_date
 
 
 
+combine all those to get the disease count for seviatrity
+
+has_copd
+has_diabetes
+has_heart_disease
+has_hypertension
+has_kidney_disease
+
+
+
+
 
 
 
@@ -113,7 +124,10 @@ Check for Abnormal
       ' glucose_level']
 
 
-
+remove some negative values rows 
+      wbc_count 
+      glucose_level
+      creatinine_level
 
 
 OUTLIER PROBLEM
@@ -141,6 +155,29 @@ length_of_stay - outlier present --
 
 
 
+HYPOTHESIS  TESTING DONE SO FAR 
 
+
+All Hypothesis Tests Performed
+1. Mann-Whitney U Tests (Numeric Features) — 02_explore.ipynb
+For each numeric column (age, wbc_count, glucose_level, etc.), three tests:
+
+H0: Normal values and upper outliers have equal readmission rates
+H0: Normal values and lower outliers have equal readmission rates
+H0: Lower and upper outliers have equal readmission rates
+Result: Identified significant relationships between extreme values and readmission
+
+2. Chi-Square Test: Disease Count vs Readmission — 02_explore.ipynb
+H0: Disease count does NOT affect readmission
+H1: Disease count affects readmission
+Key Finding: As disease_count increases, readmission rate increases (p < 0.05)
+
+3. Chi-Square Test: Diabetes vs Readmission — 03_hypo.ipynb
+H0: Diabetes has no effect on readmission
+H1: Diabetes has an effect on readmission
+Key Findings
+✅ length_of_stay — Strong predictor of readmission
+✅ disease_count — Statistically significant relationship
+✅ Outlier groups — Upper outliers in clinical metrics show higher readmission rates
 
 
