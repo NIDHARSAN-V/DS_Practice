@@ -4,364 +4,305 @@ Column: age
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 0
-Normal Data: 12755
+Lower: 0
+Upper: 0
+Normal: 12659
 
 --- Readmission Rates ---
 Lower: No data
 Upper: No data
-Normal: 0.255
-
---- Test: Normal vs Upper ---
-❌ Skipped (empty group)
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Normal: 0.254
 
 ==============================
 Column: length_of_stay
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 525
-Normal Data: 12230
+Lower: 0
+Upper: 521
+Normal: 12138
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.341
+Upper: 0.34
 Normal: 0.251
-
---- Test: Normal vs Upper ---
-P-value: 1.9940446246040577e-06
-Result: ✅ Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
 
 ==============================
 Column: num_procedures
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 190
-Normal Data: 12565
+Lower: 0
+Upper: 188
+Normal: 12471
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.337
-Normal: 0.254
-
---- Test: Normal vs Upper ---
-P-value: 0.004576135209395012
-Result: ✅ Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Upper: 0.335
+Normal: 0.253
 
 ==============================
 Column: num_medications
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 43
-Normal Data: 12712
+Lower: 0
+Upper: 43
+Normal: 12616
 
 --- Readmission Rates ---
 Lower: No data
 Upper: 0.349
-Normal: 0.255
+Normal: 0.254
 
---- Test: Normal vs Upper ---
-P-value: 0.07876401542514094
-Result: ❌ Not Significant
+==============================
+Column: has_diabetes
+==============================
 
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
+--- Group Sizes ---
+Lower: 0
+Upper: 0
+Normal: 12659
 
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+--- Readmission Rates ---
+Lower: No data
+Upper: No data
+Normal: 0.254
+
+==============================
+Column: has_hypertension
+==============================
+
+--- Group Sizes ---
+Lower: 0
+Upper: 0
+Normal: 12659
+
+--- Readmission Rates ---
+Lower: No data
+Upper: No data
+Normal: 0.254
+
+==============================
+Column: has_heart_disease
+==============================
+
+--- Group Sizes ---
+Lower: 0
+Upper: 2852
+Normal: 9807
+
+--- Readmission Rates ---
+Lower: No data
+Upper: 0.375
+Normal: 0.219
+
+==============================
+Column: has_copd
+==============================
+
+--- Group Sizes ---
+Lower: 0
+Upper: 1507
+Normal: 11152
+
+--- Readmission Rates ---
+Lower: No data
+Upper: 0.239
+Normal: 0.257
+
+==============================
+Column: has_kidney_disease
+==============================
+
+--- Group Sizes ---
+Lower: 0
+Upper: 1936
+Normal: 10723
+
+--- Readmission Rates ---
+Lower: No data
+Upper: 0.241
+Normal: 0.257
 
 ==============================
 Column: previous_admissions
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 832
-Normal Data: 11923
+Lower: 0
+Upper: 821
+Normal: 11838
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.463
-Normal: 0.241
-
---- Test: Normal vs Upper ---
-P-value: 3.664824277815523e-46
-Result: ✅ Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Upper: 0.46
+Normal: 0.24
 
 ==============================
 Column: discharge_systolic_bp
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 36
-Normal Data: 12719
+Lower: 0
+Upper: 36
+Normal: 12623
 
 --- Readmission Rates ---
 Lower: No data
 Upper: 0.222
 Normal: 0.255
 
---- Test: Normal vs Upper ---
-P-value: 0.6744937323496683
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
-
 ==============================
 Column: discharge_diastolic_bp
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 25
-Normal Data: 12730
+Lower: 0
+Upper: 24
+Normal: 12635
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.32
-Normal: 0.255
-
---- Test: Normal vs Upper ---
-P-value: 0.22787801305690525
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Upper: 0.333
+Normal: 0.254
 
 ==============================
 Column: discharge_heart_rate
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 56
-Normal Data: 12699
+Lower: 0
+Upper: 55
+Normal: 12604
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.268
-Normal: 0.255
-
---- Test: Normal vs Upper ---
-P-value: 0.41272268204148627
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Upper: 0.273
+Normal: 0.254
 
 ==============================
 Column: discharge_temperature
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 70
-Upper Outliers: 63
-Normal Data: 12622
+Lower: 69
+Upper: 62
+Normal: 12528
 
 --- Readmission Rates ---
-Lower: 0.257
-Upper: 0.175
+Lower: 0.261
+Upper: 0.177
 Normal: 0.255
-
---- Test: Normal vs Upper ---
-P-value: 0.9289615269535939
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-P-value: 0.5131017696869659
-Result: ❌ Not Significant
-
---- Test: Lower vs Upper ---
-P-value: 0.2528065174307642
-Result: ❌ Not Significant
 
 ==============================
 Column: discharge_o2_saturation
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 7
-Upper Outliers: 0
-Normal Data: 12748
+Lower: 7
+Upper: 0
+Normal: 12652
 
 --- Readmission Rates ---
 Lower: 0.286
 Upper: No data
-Normal: 0.255
-
---- Test: Normal vs Upper ---
-❌ Skipped (empty group)
-
---- Test: Normal vs Lower ---
-P-value: 0.5739021965894661
-Result: ❌ Not Significant
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Normal: 0.254
 
 ==============================
 Column: hemoglobin_level
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 27
-Upper Outliers: 34
-Normal Data: 12694
+Lower: 27
+Upper: 34
+Normal: 12598
 
 --- Readmission Rates ---
 Lower: 0.296
 Upper: 0.265
-Normal: 0.255
-
---- Test: Normal vs Upper ---
-P-value: 0.4480201401924473
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-P-value: 0.6888920638800327
-Result: ❌ Not Significant
-
---- Test: Lower vs Upper ---
-P-value: 0.7935258870805224
-Result: ❌ Not Significant
+Normal: 0.254
 
 ==============================
 Column: wbc_count
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 36
-Upper Outliers: 55
-Normal Data: 12664
+Lower: 7
+Upper: 60
+Normal: 12592
 
 --- Readmission Rates ---
-Lower: 0.417
-Upper: 0.291
+Lower: 0.143
+Upper: 0.283
 Normal: 0.254
-
---- Test: Normal vs Upper ---
-P-value: 0.2677034341180491
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-P-value: 0.9871445368211851
-Result: ❌ Not Significant
-
---- Test: Lower vs Upper ---
-P-value: 0.2202056883963549
-Result: ❌ Not Significant
 
 ==============================
 Column: creatinine_level
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 0
-Upper Outliers: 619
-Normal Data: 12136
+Lower: 0
+Upper: 602
+Normal: 12057
 
 --- Readmission Rates ---
 Lower: No data
-Upper: 0.237
-Normal: 0.256
-
---- Test: Normal vs Upper ---
-P-value: 0.8478762886278541
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-❌ Skipped (empty group)
-
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+Upper: 0.234
+Normal: 0.255
 
 ==============================
 Column: glucose_level
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 40
-Upper Outliers: 36
-Normal Data: 12679
+Lower: 23
+Upper: 36
+Normal: 12600
 
 --- Readmission Rates ---
-Lower: 0.35
+Lower: 0.304
 Upper: 0.361
 Normal: 0.254
-
---- Test: Normal vs Upper ---
-P-value: 0.07121605029014558
-Result: ❌ Not Significant
-
---- Test: Normal vs Lower ---
-P-value: 0.9169637768784846
-Result: ❌ Not Significant
-
---- Test: Lower vs Upper ---
-P-value: 0.925017482045289
-Result: ❌ Not Significant
 
 ==============================
 Column: medication_adherence_score
 ==============================
 
 --- Group Sizes ---
-Lower Outliers: 172
-Upper Outliers: 0
-Normal Data: 12583
+Lower: 172
+Upper: 0
+Normal: 12487
 
 --- Readmission Rates ---
 Lower: 0.331
 Upper: No data
+Normal: 0.253
+
+==============================
+Column: readmitted_30days
+==============================
+
+--- Group Sizes ---
+Lower: 0
+Upper: 0
+Normal: 12659
+
+--- Readmission Rates ---
+Lower: No data
+Upper: No data
 Normal: 0.254
 
---- Test: Normal vs Upper ---
-❌ Skipped (empty group)
+==============================
+Column: disease_count
+==============================
 
---- Test: Normal vs Lower ---
-P-value: 0.9896399060410715
-Result: ❌ Not Significant
+--- Group Sizes ---
+Lower: 0
+Upper: 138
+Normal: 12521
 
---- Test: Lower vs Upper ---
-❌ Skipped (empty group)
+--- Readmission Rates ---
+Lower: No data
+Upper: 0.428
+Normal: 0.253
